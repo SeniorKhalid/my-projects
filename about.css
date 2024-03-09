@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: url(pic/stream.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+                /* .............................ABOUT............................... */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: goldenrod;
+}
+.about-col-1 img{
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+                                                            /* oh my oh */
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: maroon;
+    left: 0;
+    bottom: -8px;
+    position: absolute;
+    transition: 1s; 
+}
+.tab-links.active-links::after{
+    width: 70%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: yellow;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
